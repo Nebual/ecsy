@@ -1,7 +1,11 @@
 
-# Class: System
+# Class: System <**T**>
 
 A system that manipulates entities in the world.
+
+## Type parameters
+
+▪ **T**: *[World](world.md)*
 
 ## Properties
 
@@ -34,6 +38,14 @@ Should be used inside of execute.
 
 ___
 
+###  world
+
+• **world**: *T*
+
+World instance
+
+___
+
 ### `Static` queries
 
 ▪ **queries**: *object*
@@ -45,7 +57,7 @@ This needs to be user defined.
 
 * \[ **queryName**: *string*\]: object
 
-* **components**: *[Component](component.md) | [NotComponent](../interfaces/notcomponent.md)[]*
+* **components**: *[Component](component.md)‹› | [NotComponent](../interfaces/notcomponent.md)[]*
 
 * **listen**(): *object*
 

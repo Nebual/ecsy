@@ -1,10 +1,11 @@
 import {Component, ComponentConstructor} from "./Component";
+import { World } from "./World";
 import { Entity } from "./Entity";
 
 /**
  * A system that manipulates entities in the world.
  */
-export abstract class System {
+export abstract class System<T extends World = World> {
   /**
    * Defines what Components the System will query for.
    * This needs to be user defined.
@@ -36,6 +37,12 @@ export abstract class System {
    * Whether the system will execute during the world tick.
    */
   enabled: boolean;
+
+  /**
+   * World instance
+   */
+  world: T;
+
   /**
    * Resume execution of this system.
    */
