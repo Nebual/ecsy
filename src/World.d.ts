@@ -25,8 +25,9 @@ export class World {
   /**
    * Register a system.
    * @param System Type of system to register
+   * @param attributes Additional parameters passed to the System's constructor
    */
-  registerSystem<T extends System>(System:SystemConstructor<T>): this;
+  registerSystem<T extends System>(System:SystemConstructor<T>, attributes?: {priority?: number, [key: string]: any}): this;
 
   /**
    * Get a system registered in this world.

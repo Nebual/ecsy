@@ -15,7 +15,7 @@ A unique ID for this entity.
 
 ###  addComponent
 
-▸ **addComponent**<**T**>(`Component`: [ComponentConstructor](../interfaces/componentconstructor.md)‹T›, `values?`: object): *this*
+▸ **addComponent**<**T**>(`Component`: [ComponentConstructor](../interfaces/componentconstructor.md)‹T›, `values?`: Partial‹T›): *this*
 
 Add a component to the entity.
 
@@ -28,7 +28,7 @@ Add a component to the entity.
 Name | Type | Description |
 ------ | ------ | ------ |
 `Component` | [ComponentConstructor](../interfaces/componentconstructor.md)‹T› | Type of component to add to this entity |
-`values?` | object | Optional values to replace the default attributes on the component  |
+`values?` | Partial‹T› | Optional values to replace the default attributes on the component  |
 
 **Returns:** *this*
 

@@ -112,7 +112,7 @@ ___
 
 ###  registerSystem
 
-▸ **registerSystem**<**T**>(`System`: [SystemConstructor](../interfaces/systemconstructor.md)‹T›): *this*
+▸ **registerSystem**<**T**>(`System`: [SystemConstructor](../interfaces/systemconstructor.md)‹T›, `attributes?`: object): *this*
 
 Register a system.
 
@@ -122,9 +122,17 @@ Register a system.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`System` | [SystemConstructor](../interfaces/systemconstructor.md)‹T› | Type of system to register  |
+▪ **System**: *[SystemConstructor](../interfaces/systemconstructor.md)‹T›*
+
+Type of system to register
+
+▪`Optional`  **attributes**: *object*
+
+Additional parameters passed to the System's constructor
+
+Name | Type |
+------ | ------ |
+`priority?` | number |
 
 **Returns:** *this*
 

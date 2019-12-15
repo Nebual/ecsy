@@ -47,7 +47,7 @@ export class Entity {
    */
   addComponent<T extends Component>(
     Component: ComponentConstructor<T>,
-    values?: object
+    values?: Partial<T>
   ): this;
 
   /**
